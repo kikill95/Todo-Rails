@@ -1,0 +1,88 @@
+/*----------------------------------------------------------------------------------*/
+/*------------------------------RESET DEFAULT STYLES--------------------------------*/
+/*----------------------------------------------------------------------------------*/
+html,body                       { width:100%; height:100%; }
+body                            { padding:0; margin:0; font:16px Tahoma, sans-serif; background:#fff; color:#000; }
+div,p,a,span,em,strong,img,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,table,td,tr,form,fieldset,label,select,checkbox,input,textarea {
+  padding:0;
+  margin:0;
+  outline:none;
+  list-style:none;
+}
+select, input, textarea        { font-size:16px; vertical-align:middle; }
+textarea                       { vertical-align:top; }
+:focus                         { outline:none; }
+input[type=submit]             { cursor:pointer; }
+img, fieldset                  { border:0; }
+table                          { border-collapse:collapse; border-spacing:0; }
+a:link, a:visited              { font:25px Tahoma, sans-serif; color:#000; text-decoration:underline; }
+a:hover                        { text-decoration:none; }
+/*----------------------------------------------------------------------------------*/
+/*------------------------------------BODY------------------------------------------*/
+/*----------------------------------------------------------------------------------*/
+#wrapper {
+  width: 800px;
+  margin: 0 auto;
+}
+h1 {
+  margin: 10px;
+  text-align: center;
+}
+.content {
+  padding: 15px;
+  border-radius: 12px;
+  background-color: darkgoldenrod;
+}
+.btn {
+  padding: 5px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+.list {
+  margin: 10px;
+  border: 2px solid yellow;
+  border-radius: 5px;
+}
+.todo {
+  margin: 5px;
+  border-bottom: 1px solid yellow;
+}
+.todo input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-bottom: 7px;
+}
+.todo p {
+  display: inline-block;
+  font-size: 22px;
+  font-style: italic;
+}
+.todo > .btn {
+  padding: 2px;
+  float: right;
+}
+.done-true {
+  text-decoration: line-through;
+  color: ghostwhite;
+}
+#creating-todo {
+  width: 300px;
+  margin: 0 auto;
+}
+#creating-todo input {
+  width: 100%;
+  padding: 5px;
+  text-align: center;
+  border: 2px solid darkgreen;
+  border-radius: 5px;
+}
+.filters {
+  margin-top: 10px;
+  padding: 15px;
+  text-align: center;
+  border-radius: 12px;
+  background-color: forestgreen;
+}
+.angular-dnd-helper {
+  opacity: 0.8;
+}

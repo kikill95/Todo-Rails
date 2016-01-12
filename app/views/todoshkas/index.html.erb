@@ -1,0 +1,24 @@
+<div id="wrapper" ng-app="todoApp" ng-controller="TodoCtrl" ng-cloak>
+  <h1>Todos</h1>
+  <div class="content">
+    <div ng-show="todos.length > 0">
+      <input type="button" value="Select all" class="btn" ng-click="selectAll();"/>
+      <input type="button" value="Info" class="btn" ng-click="alertInfo();"/>
+    </div>
+    <ul class="list">
+      <li class="todo" ng-repeat="todo in todos" ng-hide="todo.hide" ng-dblclick="editTodo(todo, true);" dnd-sortable>
+        <input type="checkbox" ng-model="todo.done" ng-click="editTodo(todo, false);"/>
+        <p class="done-{{todo.done}}">{{todo.text}}</p>
+        <input type="button" value="x" class="btn" ng-click="deleteTodo(todo);"/>
+      </li>
+    </ul>
+    <div id="creating-todo">
+      <input type="text" placeholder="Write your todo here" ng-enter="addTodo();" ng-model="todoText" required/>
+    </div>
+  </div>
+  <div class="filters">
+    <input type="button" value="Show all" class="btn" ng-click="showAll();"/>
+    <input type="button" value="Show done" class="btn" ng-click="showDone();"/>
+    <input type="button" value="Show not done" class="btn" ng-click="showNotDone();"/>
+  </div>
+</div>
